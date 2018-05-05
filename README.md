@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>我的简历</title>
+   <!--<link rel="stylesheet" type="text/css" href="jianli.css"> 
+   -->
+    
+   <link rel="stylesheet" type="text/css" href="jianli_1.css"> 
+    
+  </head>
+
+<body>
+
+<div id="zhengwen">
+
+<div class="biaoti"><h2>简历</h2></div>
+<div class="hengxian"></div>
+<div class="biaoge">
+<table width=100% border="1" align="center">  
+            <tr>  
+                <td class="mc">姓&nbsp;&nbsp;名：</td>  
+                <td width="100" height="50">张小龙</td>  
+                  
+                <td class="mc">性&nbsp;&nbsp;别：</td>  
+                <td width="100" height="50" >男</td> 
+
+                <td class="mc">民&nbsp;&nbsp;族：</td>  
+                <td width="100" height="50">汉</td>  
+
+                <td rowspan="3" align="center">
+                <img width="120" height="120" src="http://bpic.588ku.com/back_pic/04/51/55/91585e81973caf6.jpg" alt="头像">
+                </td>
+            </tr>  
+  
+            <tr>  
+                <td class="mc">出生年月：</td>  
+                <td width="100" height="50">1988-03-20</td>  
+                  
+                <td class="mc">联系电话：</td>  
+                <td width="100" height="50">18888888888</td>  
+
+                <td class="mc">工作经验：</td>  
+                <td width="100" height="50">6年工作经验</td>  
+                
+            </tr>
+                               
+            <tr>  
+                <td class="mc">学&nbsp;&nbsp;历：</td>  
+                <td width="100" height="50">硕士</td>  
+                  
+                <td class="mc">专&nbsp;&nbsp;业：</td>  
+                <td width="100" height="50">生物信息工程</td> 
+
+                <td class="mc">毕业学校：</td>  
+                <td width="100" height="50">中山大学</td>                
+            </tr>  
+      
+            <tr>  
+                <td class="mc">住&nbsp;&nbsp;址：</td>  
+                <td height="50" colspan="3">广东省广州市海珠区新港西路135号</td>
+                <td class="mc">电子邮箱：</td>  
+                <td height="50" colspan="2">zzzzzzz@126.com</td>   
+            </tr>  
+
+            <tr>  
+                <td class="mc">求职意向:</td>  
+                <td height="50" colspan="6">产品经理</td>  
+            </tr>
+
+            <tr>  
+                <td class="mc">电脑水平:</td> 
+                <td colspan="6">
+                <p>①办公软件：word,excel,ppt中等水平，满足日常使用；</p>
+                <p>②计算机技术：浅显知道前端h5,js,PHP计算机技术，对于较深技术内容了解不多，如调研同行有某些功能，会和工程师一起研究如何实现看能否为我所用；</p>
+                <p>③脑图梳理：熟练使用Xmind梳理流程要素；</p>
+                <p>④原型工具：能够熟练使用Axure，墨刀工具制作原型；</p>
+                <p>⑤Axure原型工具软件：能够熟练使用Axure。根据需求，绘制线框图交互原型，附上需求页面的解释说明。同时建立文档说明以及开会，口头表达与工程师沟通上线页面。公司追求“短平快”策略。</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="mc">学习经历:</td>
+                <td colspan="6">
+                <ul>
+                   <li>2008-09-01至2012-07-01&nbsp;南京大学&nbsp;生物学学士</li>
+                   <li>2012-09-01至2015-07-01&nbsp;中山大学&nbsp;生物信息硕士</li>
+                </ul>
+                </td>
+            </tr>
+            
+            <tr>
+               <td class="mc">主要经历:</td>
+               <td colspan="6">
+               <dl>
+                  <dt>2012-07-01至2013-03-01&nbsp;XX网络科技有限公司</dt>
+                  <dd>①维护更新某某PC站点</dd>
+                  <dd>②规划设计某某微信公众号功能</dd>
+               </dl>
+
+               <dl>
+                  <dt>2013-03-01至2018-03-01&nbsp;XX网络科技有限公司</dt>
+                  <dd>①维护更新某某PC站点</dd>
+                  <dd>②规划设计某某微信公众号功能</dd>
+                </dl>
+               </td>
+            </tr> 
+
+            <tr>
+                <td class="mc">其他要求:</td>
+                 <td colspan="6"><a href="http://note.youdao.com/noteshare?id=4d409f9f857f8f0956ed1edca16aeb1b&sub=WEB5eed520b50eb51e637b26118d1090d15" target="_blank">点我查看学习第一天的笔记</a></td>
+            </tr>                    
+</table>
+</div>
+</div>
+
+</body>
+</html>
