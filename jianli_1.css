@@ -1,0 +1,135 @@
+/*前端学习第一、第二天节点*/
+
+#zhengwen{
+         margin-top: 3%;
+         margin-left:  15%;
+         margin-right: 15%;
+         margin-bottom: 5%;
+         font-family: sans-serif;    
+         background-color:rgba(255,255,255,0.9);  /*前端学习第四天追加，透明设置*/  
+         height: 1000px;  
+
+         padding-top: 2%;
+        
+         padding-left: 200px;
+         padding-right: 200px;
+
+ }
+
+
+ 
+.biaoti {
+      text-align:center;
+      
+      background-color: #69A5F7;
+      float:left;
+      width: 18%;
+      height: 900px;
+    }
+
+ .hengxian {
+  background-color: #4F7CB9;
+  margin: 0px;
+  padding: 0px;
+  width: 2%;
+  height: 900px;
+   float: left;
+ 
+
+ }
+
+.biaoge {}
+
+
+.biaoge {
+  width: 80%;
+  margin: 0px;
+  padding: 0px;
+  height: 900px;
+  float: right;
+}
+ 
+
+table{
+      border-collapse:collapse;
+      border: 1px solid #4F7CB9;
+      margin:center; /*前端学习第四天追加，让表格居中*/
+     
+      height: inherit;
+}
+
+td ul {
+      list-style: none;
+      margin: 0px;
+     
+}  
+
+td ul li {
+ padding: 5px 0px 5px 0px;
+
+}
+
+
+   #zhengwen .biaoti h2 {
+    font-size: 32px;
+    padding-top: 50px;/*前端学习第四天追加*/
+    color: white;
+    text-shadow: 5px 5px 5px #FF0000;
+
+}
+
+
+td p {
+    color: red;
+    padding-left:5%;
+}
+
+
+.mc{
+   width: 100px;
+   background-color: #FDEBDF;
+   text-align: center;
+   padding: 10px; 
+   font-weight:bold;/*前端学习第三天追加，增强字体效果*/
+}
+
+/*前端学习第三天节点，差缺补漏，增加知识点*/
+
+/*前端学习第四天节点*/
+body {
+  background-image:url(http://bpic.588ku.com/back_pic/02/67/77/09578f0c3a22a78.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+  width: 100%;  
+  height: 100%;
+
+}
+
+
+a:link {
+  color:green;
+
+}
+
+a:visited {
+  color:red;
+
+}
+
+a:focus {
+  color:blue;
+
+}
+
+a:hover {
+  color:#1dacd6;
+
+}
+
+a:active {
+  color:#CDFEAA;
+
+}
+
+/*前端学习第五天节点*/
+dl dt {padding-left: 5%;}
