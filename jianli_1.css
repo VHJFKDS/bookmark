@@ -1,18 +1,19 @@
 /*前端学习第一、第二天节点*/
 
 #zhengwen{
-         margin-top: 3%;
          margin-left: 15%;
          margin-right: 15%;
-         margin-bottom: 5%;
          font-family: sans-serif;    
-         background-color:rgba(255,255,255,0.9);  /*前端学习第四天追加，透明设置*/  
-          
+         background-color:rgba(255,255,255,0.9);  /*前端学习第四天追加，透明设置*/   
          padding-top: 2%;
          padding-bottom: 2%;
          padding-left: 200px;
          padding-right: 200px;
 
+ }
+
+ .clearfix > div {
+  float:left;
  }
 
 .clearfix:after {
@@ -26,10 +27,9 @@
    }
  
 .biaoti {
-      text-align:center;
-      
+      text-align:center;     
       background-color: #69A5F7;
-      float:left;
+      
       width: 18%;
       height: 900px;
     }
@@ -40,7 +40,7 @@
   padding: 0px;
   width: 2%;
   height: 900px;
-   float: left;
+   
  
  }
 
@@ -50,7 +50,7 @@
   margin: 0px;
   padding: 0px;
   height: 900px;
-  float: right;
+  
 }
  
 
@@ -101,11 +101,11 @@ td p {
 
 /*前端学习第四天节点*/
 body {
-  background-image:url(http://bpic.588ku.com/back_pic/02/67/77/09578f0c3a22a78.jpg);
+  background:url(http://bpic.588ku.com/back_pic/02/67/77/09578f0c3a22a78.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;  
-  width: 100%;  
-  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 
 }
 
