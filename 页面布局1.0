@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>页面布局</title>
   <style type="text/css">
-/* css common  */  
+/* css common */  
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }  
 body { background:#fff; color:#666; font-size:14px; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif; }  
 td,th,caption { font-size:14px; }  
@@ -29,7 +29,7 @@ html {overflow-y: scroll;}
      zoom: 1; 
    } /*IE6 IE7 要触发haslayout*/
 
-
+/*头部开始-背景-logo-右侧*/
 header {
   width: 100%;
   margin: 0 auto;
@@ -55,18 +55,21 @@ header div.logo {
   margin-bottom: 10px;
 }
 
-div.headerright{
+header div.headerright{
   margin-right: 20%;
   margin-top: 10px;
 }
 
-.headerright ul li {
-  color: #fff;
+.headerright ul li { 
   float: left;
-  padding: 10px;
-  
+  padding: 10px; 
 }
 
+.headerright ul li a{
+  color: #fff;
+}
+/*头部结束*/
+/*中间banner部分开始*/
 div.banner{
   width: 100%;
   height: 300px;
@@ -92,27 +95,27 @@ div.banner{
     background-color: #e0f0d5;
    padding-top: 25px;
   }
-    
+/*中间banner部分结束*/
+
+/*导航开始*/
 nav{
   height: 70px;
+  margin-bottom:10px;
   background-color: #FBFFFF;
   border-bottom:1px solid #cccccc;
   padding-top: 16px;
 }
-
 
 .navul{
   margin-left:20%;
   margin-right: 20%;
   height: 70px; 
   margin-top: 19px;
-  
 }
 
  div.navul ul li{
     float: left;
-     padding: 15px 25px;
-    
+    padding: 15px 25px;  
 }
  
 .nav ul .navmc{
@@ -120,15 +123,14 @@ nav{
   background-color: #E5E6E6;
   border:1px solid #cccccc;
   border-radius: 15px 15px 0 0;
- 
 }
 
 .nav ul #first-child{
   background-color: #fff;
   border-bottom: 1px solid #fff;
-
 } 
-
+/*导航结束*/
+/*正文模块*/
 .main{
   margin: 0 20%;
 }
@@ -161,8 +163,9 @@ footer .info{
   color: #fff;
   text-align:center;
   padding-top: 10px;
-
+  font-size: 16px;
 }
+/*正文模块结束*/
   </style>
 
   </head>
@@ -172,9 +175,9 @@ footer .info{
   <div class="logo"><img src="#" alt="logo" class="imglogo"></div>
   <div class="headerright">
     <ul class="rightlist">
-      <li class="mc"><a href=""></a> Github</li>
-      <li class="mc"><a href=""></a> Register</li>
-      <li class="mc"><a href=""></a> Login</li>
+      <li class="mc"><a href="">Github</a></li>
+      <li class="mc"><a href="">Register</a></li>
+      <li class="mc"><a href="">Login</a></li>
     </ul>
   </div>
 
@@ -193,9 +196,9 @@ footer .info{
 <nav class="nav">
   <div class="navul clearfix">
     <ul class="navli">
-     <li id="first-child" class="navmc"><a href=""></a>首页</li>
-     <li class="navmc"><a href=""></a>精选</li>
-     <li class="navmc"><a href=""></a>直播</li>
+     <li id="first-child" class="navmc"><a href="">首页</a></li>
+     <li class="navmc"><a href="">精选</a></li>
+     <li class="navmc"><a href="">直播</a></li>
     </ul>
   </div>
 </nav>
