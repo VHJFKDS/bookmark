@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>页面布局</title>
+  <style type="text/css">
+/* css common */  
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }  
+body { background:#fff; color:#666; font-size:14px; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif; }  
+td,th,caption { font-size:14px; }  
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }  
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}  
+a { color:#333; text-decoration:none; }  
+a:hover { color: #0306FF;}  
+img { border:none; }  
+ol,ul,li { list-style:none; }  
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; border: 1px solid #333;}  
+table { border-collapse:collapse; }  
+html {overflow-y: scroll;}  
+/* css common */  
+
+.clearfix:after {  
+    content: "";  
+    display: block;  
+    clear: both;  
+}   /*清除浮动最常用的方式就是，在浮动元素的父级添加一个clearfix*/
+
+.clearfix {     
+     zoom: 1; 
+   } /*IE6 IE7 要触发haslayout*/
+
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+  background-color:black; 
+}
+
+div.logo {
+  float: left;
+}
+
+div.headerright{
+  float: right;
+}
+
+header div.logo {
+  margin-left: 20%;
+  background-color: lightgreen;
+
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.headerright{
+  margin-right: 20%;
+  margin-top: 10px;
+}
+
+.headerright ul li {
+  color: #fff;
+  float: left;
+  padding: 10px;
+  
+}
+
+div.banner{
+  width: 100%;
+  height: 300px;
+  background-color: khaki;
+}
+
+nav{
+  height: 50px;
+  background-color: #FBFFFF;
+  border-bottom:1px solid #E5E6E6;
+  padding-top: 10px;
+}
+
+.navul{
+  margin-left:20%;
+  margin-right: 20%;
+  height: 100%;
+
+  padding-top: 9px;
+}
+
+
+ div.navul ul li{
+    float: left;
+    padding:10px;
+}
+
+  
+ul.navli .navmc{
+  font-size: 15px;
+  background-color: #E5E6E6;
+  border:1px solid #E5E6E6;
+}
+
+ul.navli #first-child{
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+
+} 
+
+
+.main{
+  margin: 0 20%;
+}
+
+.main{
+  display: flex;
+  
+}
+
+div.mct{
+  background-color: pink;
+
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 250px;
+}
+
+    section div{
+  flex: 1 300px;/* flex 值为 1，这表示每个元素占用空间都是相等的，占用的空间是在设置 padding 和 margin 之后剩余的空间。*/
+}
+
+section div:nth-of-type(2) {
+  flex: 2 300px;/*第三个占有两个单位*/
+}
+
+
+
+
+footer {
+  margin-top:10px;
+  height: 80px;
+  background-color: #625C59;
+}
+
+  </style>
+
+  </head>
+<body>
+
+<header class="">
+  <div class="logo"><img src="#" alt="logo" class="imglogo"></div>
+  <div class="headerright">
+    <ul class="rightlist">
+      <li class="mc"><a href=""></a> Github</li>
+      <li class="mc"><a href=""></a> Register</li>
+      <li class="mc"><a href=""></a> Login</li>
+    </ul>
+  </div>
+
+</header>
+<div class="banner">
+  <img src="" alt="banner" class="imgbanner">
+</div>
+
+<nav class="">
+  <div class="navul clearfix">
+    <ul class="navli">
+     <li id="first-child" class="navmc"><a href=""></a>首页</li>
+     <li class="navmc"><a href=""></a>精选</li>
+     <li class="navmc"><a href=""></a>直播</li>
+    </ul>
+  </div>
+</nav>
+  <section class="main">
+        <div class="mct c1">content1</div>
+        <div class="mct c2">content2</div>
+        <div class="mct c3">content3</div>
+  </section> 
+  <section class="main">  
+        <div class="mct c4">content4</div>
+        <div class="mct c5">content5</div>
+        <div class="mct c6">content6</div>
+        <div class="mct c7">content7</div>      
+  </section>
+  <section class="main">   
+        <div class="mct c8">content8</div>
+        <div class="mct c9">content9</div>
+        <div class="mct c10">content10</div>
+  </section> 
+
+<footer></footer>
+    
+</body>
+</html>
