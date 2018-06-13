@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>优美的画面</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+/* css common */  
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }  
+body { background:#fff; color:#666; font-size:14px; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif; }  
+td,th,caption { font-size:14px; }  
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }  
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}  
+a { color:#333; text-decoration:none; }  
+a:hover { color: #0306FF;}  
+img { border:none; }  
+ol,ul,li {list-style:none;  }  
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; border: 1px solid #333;}  
+table { border-collapse:collapse; }  
+html {overflow-y: scroll;}  
+
+.clearfix:after {  
+    content: "";  
+    display: block;  
+    clear: both;  
+}   /*清除浮动最常用的方式就是，在浮动元素的父级添加一个clearfix*/
+
+.clearfix {     
+     zoom: 1; 
+   } /*IE6 IE7 要触发haslayout*/
+/* css common */ 
+/*
+①http://cdn.staticfile.org/normalize/3.0.1/normalize.min.css（引自其它网站）   这个是重置样式，就是不管你外表原来如何，全部回炉重造。
+    ②https://necolas.github.io/normalize.css/3.0.2/normalize.css（引自其它网站）  这个是常规化样式，稍微保留你的外形，在进行改造。
+*/
+
+/*http://libs.baidu.com/jquery/2.0.0/jquery.js   百度cdn的库*/
+
+#content_one {
+    height: 850px;
+    background: url(http://bpic.588ku.com/back_pic/03/66/44/3857b03dd8557ce.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+.container {
+    max-width: 1080px;
+    text-align:center;
+    margin:0 auto;
+    position: relative;
+    top:100px;
+}
+
+.container_one {
+    max-width: 800px;
+    text-align:center;
+    margin:0 auto;
+}
+
+.container_one h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.container_one p{
+    font-size: 25px;
+    margin: 15px auto;
+    line-height: 40px;
+}
+
+.container_two{
+    margin:100px auto;
+    border: 1px solid #4C4B4B;
+
+}
+
+.container_two h2{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.container_two p{
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.container_two .formbox{
+    max-width: 800px;
+    margin:60px auto;
+    /*border: 1px solid #fff;*/
+}
+
+.container_two .inputbox1,.container_two .inputbox2{
+    height: 40px;
+    border-radius:5px;
+    background-color: rgba(255,255,255,0.01);
+    color: #fff;
+}
+
+.container_two form{
+    display: flex;
+}
+
+.container_two .inputbox2{
+    margin: 0 30px;
+}
+
+.container_two input{
+        flex: 1 50px;
+      }
+
+.container_two input:nth-of-type(1) ,.container_two input:nth-of-type(2){
+        flex: 3 200px;
+}
+
+.container_two input.inputbox3{
+    height: 40px;
+    background-color: #fff;
+    border-radius:5px;
+    
+}
+
+#content_two{
+    height: 600px;  
+    background-color: #fff;
+}
+
+
+#content_two .article{
+    max-width: 600px;
+    text-align:center;
+    margin:0 auto;
+    margin-top:80px;
+}
+
+#content_two .article p{
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+#content_two .article h2{
+    font-size: 25px;
+    margin: 10px auto;
+
+}
+
+.container_three{
+    max-width: 1080px;
+    /*text-align:center;*/
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;/*让里面的模块排行，多出的自动下一行*/
+}
+
+.container_three>div{
+    /*border: 1px solid green;*/
+    height: 200px;
+    width: 50%;/*每块各占50%并且没有边框的时候，刚好一行两个，多出的会自动下一行*/
+
+}
+
+.container_three .cont{
+    display: flex;
+}
+
+.cont>div{
+    position: relative;
+    top:50px;
+
+}
+
+.cont .img{
+    width: 10%;
+    height:20%;
+}
+.cont img{
+    width: : 100%;
+    height: 100%;
+}
+
+.cont h3{
+    font-weight:bold;
+}
+
+.cont p{
+    margin-top:5px;
+}
+
+/*.cont .ps{
+    margin-left:5%; 
+}*/
+
+.cont_one .ps,.cont_three .ps{
+    margin-right:10%;
+    margin-left:5%; 
+}
+
+.cont_two .img,.cont_four .img{
+    margin-left:10%;
+    margin-right:5%;    
+}
+
+
+#content_three{
+    /*height: 600px;*/
+    /*background-color: lightgreen;*/
+    background-image: url(http://bpic.588ku.com/back_pic/04/50/72/16585d1ab78acce.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#content_three .content_artic{
+    max-width: 1080px;
+    margin:0 auto;
+    /*border: 1px solid green;*/
+    height: inherit;
+}
+
+
+.content_artic .p_group{
+    width:45%;
+    float: left;
+    margin: 10% 5%;
+}
+
+.p_group h2{
+    font-size: 25px;
+    font-weight:bold;
+    color: #fff;
+}
+
+.p_group p{
+    margin: 20px 0px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+.p_group button{    
+    padding: 5% 5%;
+    border-radius:5px;
+    border: 1px solid #fff;
+}
+
+.p_group .button_one{
+    margin-right:5%;
+    background-color: #fff;
+}
+
+.p_group .button_two{
+    color: #fff;
+    background: rgba(255,255,255,0.01);
+}
+
+#content_three .icon-group{
+    float: right;
+    
+    /*border: 1px solid #fff;*/
+    margin: 25% 5%;
+}
+
+#content_three .icon-group .icon{
+    border: 1px solid #fff;
+    display: inline-block;/*内置元素这样才能设置长宽*/
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    margin: 20px;
+
+}
+
+#content_four .first-child .article{
+    display: flex;
+    max-width: 1080px;
+    margin: 5% auto;
+}
+
+#content_four .first-child article{
+    /*border: 1px solid green;*/
+}
+
+
+
+#content_four .first-child h2{
+    font-size: 20px;
+    text-align:center;
+    margin: 3%;
+}
+
+#content_four .first-child h3{
+    font-size: 18px;
+    text-align:center;
+    margin: 2%;
+}
+
+
+#content_four .first-child p{
+    font-size: 15px;
+    line-height: 30px;
+    padding:5% 10%;
+}
+
+#content_four .hr{
+    background: #CDD0D0;  
+    width: 100%; 
+    height: 1px;
+}
+
+
+#content_four .contentfive{
+     max-width: 1080px;  
+     margin: 5% auto;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.contentfive .cont_img{
+    max-width: 60%;
+    margin: 3% 0;
+}   
+
+.contentfive .cont_img img{
+    width: 100%;
+    height: 100%;
+}  
+
+.contentfive .cont_p{
+    max-width: 40%;
+    margin: 3% 0;
+}
+
+.contentfive .cont_p h2{
+     font-size: 18px;
+     margin:10% 0 5% 10%;
+}
+
+.contentfive .cont_p p{
+     font-size: 15px;
+     margin:0 0 5% 10%;
+}
+
+.contentfive .cont_p h2.biaoti{
+     font-size: 18px;
+     margin:10% 10% 5% 0;
+}
+
+.contentfive .cont_p p.duanluo{
+     font-size: 15px;
+     margin:0 10% 5% 0;
+}
+
+.contentsix h3{
+    font-size: 20px;
+    text-align:center;
+    margin: 3% 0 1% 0;
+}
+
+.contentsix p{
+    font-size: 15px;
+    line-height: 30px;
+    text-align:center;
+}
+
+
+
+#content_four .four_img{
+     max-width: 1080px;  
+     margin: 5% auto;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+#content_four .four_img>div{
+    max-width: 48%;
+
+    margin: 1%;
+}
+
+ .four_img img{
+    width: 100%;
+    height: 100%;
+ }
+
+.inner{
+    max-width:48%; 
+    background:rgba(0, 0, 0, .3);
+    }
+
+#content_four .contentseven{
+     max-width: 1080px;  
+     margin: 5% auto;
+    
+      /*border:1px solid red;*/
+      height: 500px;
+
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.contentseven article{
+    flex: 1 200px
+}
+
+ .contentseven article:nth-of-type(1) {
+    flex: 3 200px;     
+}
+
+.contentseven .seven_one{
+    border:1px solid #DFDFE0;
+    margin-right: 2%;
+
+}
+
+.seven_one h3{
+    font-size: 20px;
+    text-align:center;
+    margin: 3% 0 1% 0;
+}
+.seven_one .form{
+    width: 80%;
+
+    padding:0 5%;
+    margin: 3% 0;
+}
+
+
+.seven_one input{ 
+    
+    padding: 3% 2%;
+    border-radius:5px;
+    border: 1px solid #eadede;
+    margin: 5% 5%;
+    width: 100%;
+}
+
+.seven_two {
+    margin: 5%;
+}
+
+.seven_two h3{
+    font-size: 20px;
+   
+}
+
+
+.seven_two p{
+    font-size: 15px;
+    line-height: 30px;
+    margin: 5% 0;
+ 
+}
+
+.seven_two img{
+    width: 10%;
+    height:10%;
+    margin-right:3%;
+}
+
+.seven_two li{
+
+line-height: 50px;/*行内元素不能设置高度，但可以设置行高*/
+           /*让li内的内容水平居中，行内元素默认垂直居中*/
+}
+
+ .seven_two li span{
+
+    position: relative; /* li标签内的字体和图片中间对齐，让字体在原来位置top上移几个像素*/
+    top: -15px;
+    font-family: "宋体" , "微软雅黑" , "黑体";
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    height: 400px;
+}
+
+footer div{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div ul{
+    flex: 1 200px;
+    margin-top:10%;
+    line-height: 40px;
+}
+
+
+    </style>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+/*
+*使用说明：
+      $(".a").show($(".b"))
+      a是展示层，b是遮罩层     
+      b在a的内部
+*/
+
+      /*  $(".four_img").each(function(i){
+            $(this).show($(".inner").eq(i));
+        });*/
+
+
+    /*    $(function(){
+  $(".four_img").mouseover(function(){          
+    $(".inner").show();
+});
+  $(".four_img").mouseout(function(){
+  $(".inner").hide();
+});
+});   */
+
+</script>
+
+</head>
+<body>
+    <section id="content_one">
+        <div class="container">
+        <div class="container_one">
+            <h1>Hello World</h1>
+            <p>商务部新闻发言人表示：从满足中国人民不断增长的消费需求和促进高质量经济发展出发扩大进口，这是中国长期坚持的政策。中美经济有很强的互补性，中美贸易有很大的潜力，中方欢迎优质、有竞争力的美国产品等进入中国市场。</p>              
+        </div>
+        <div class="container_two">
+            <h2>在这里分享你的故事</h2>
+            <p>优质奖品免费赠送</p>
+            <div class="formbox">
+            <form action="" method="post">
+            <input type="email" name="email" value="zxl@baidu.com" placeholder="请输入邮箱" class="inputbox1">
+            <input type="password" name="password" placeholder="请输入密码" class="inputbox2">
+            <input type="submit" name="" value="登录" class="inputbox3 buttonbox">
+            </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="content_two">
+        <div class="article">
+            <p>BOATLOADAS OF AWESOME</p>
+            <h2>Read-made,customizable,HTML<br>landing page sections</h2>
+        </div>
+        
+        <div class="container_three">
+            <div class="cont cont_one">
+                <div class="img"><img src="http://bpic.588ku.com/element_origin_min_pic/00/91/48/6056f16ffc7cd5e.jpg"></div>
+                <div class="ps">
+                    <h3>Mobil First
+                    </h3>
+                    <p>All mod mm sdsf momom my fimliy acnit adssd.ghgg gggggg gggg ggggg ggggggg ggggg ggggg ggg gggg gggggg gggggg ggg ggggg ggg ggg 
+                    </p> 
+                </div>
+
+            </div>
+
+            <div class="cont cont_two">
+                <div class="img"><img src="http://bpic.588ku.com/element_origin_min_pic/00/92/67/9856f22f4e800b1.jpg"></div>
+                <div class="ps">
+                    <h3>Mobil First
+                    </h3>
+                    <p>All mod mm sdsf momom my fimliy acnit adssd.ghgg gggggg gggg ggggg ggggggg ggggg ggggg ggg gggg gggggg gggggg ggg ggggg ggg ggg
+                    </p>
+                </div>
+
+            </div>
+            <div class="cont cont_three">
+                <div class="img"><img src="http://bpic.588ku.com/element_origin_min_pic/00/93/50/7456f2a132139ac.jpg"></div>
+                <div class="ps">
+                    <h3>Mobil First
+                    </h3>
+                    <p>All mod mm sdsf momom my fimliy acnit adssd.ghgg gggggg gggg ggggg ggggggg ggggg ggggg ggg gggg gggggg gggggg ggg ggggg ggg ggg 
+                    </p> 
+                </div>
+
+            </div>
+            <div class="cont cont_four">
+                <div class="img"><img src="http://bpic.588ku.com/element_origin_min_pic/00/92/33/1356f219a61020d.jpg"></div>
+                <div class="ps">
+                    <h3>Mobil First
+                    </h3>
+                    <p>All mod mm sdsf momom my fimliy acnit adssd.
+                    </p>
+                </div>
+            </div>     
+        </div>
+    </section>
+    <section id="content_three" class="">
+        <div class="content_artic clearfix">
+        <div class="p_group">
+            <h2>扁平化界面风格的设计</h2>
+            <p>简单的说就是抛弃那些已经流行多年的渐变、阴影、高光等拟真视觉效果，使用一些简单的纯色块，从而打造出一种看上去更“平”的界面。扁平风格的一个优势就在于它可以更加简单直接的将信息和事物的工作方式展示出来，减少认知障碍的产生。</p>
+            <button class="button_one">CHECK OUT FEATURES</button>
+            <button class="button_two">TRY PRODUCT FOR FREE</button>
+        </div>
+
+
+        <div class="icon-group">
+            <div class="icon">1</div>
+            <div class="icon">2</div>
+            <div class="icon">3</div>
+        </div>
+        </div>
+
+    </section>
+    
+    <section id="content_four">
+        <div class="contentfour">
+           <div class="first-child">
+               <h2>ZARA、优衣库、H&#38M动作频繁，快时尚新零售之战将开启？</h2>
+
+               <div class="article">
+                <article>
+                    <h3>ZARA：数字门店迎接数字时代</h3>
+                    <p>4月份，ZARA在全球范围137家店铺内推出了为期两周的AR体验，这成为了全球同类型项目中最大规模之一。让AR的技术面向了更广的受众，体验普及又易于实现，引流效果因此变得更强</p>
+                </article>
+
+                <article>
+                    <h3>ZARA：数字门店迎接数字时代</h3>
+                    <p>4月份，ZARA在全球范围137家店铺内推出了为期两周的AR体验，这成为了全球同类型项目中最大规模之一。让AR的技术面向了更广的受众，体验普及又易于实现，引流效果因此变得更强</p>
+                </article>
+
+                <article>
+                    <h3>ZARA：数字门店迎接数字时代</h3>
+                    <p>4月份，ZARA在全球范围137家店铺内推出了为期两周的AR体验，这成为了全球同类型项目中最大规模之一。让AR的技术面向了更广的受众，体验普及又易于实现，引流效果因此变得更强</p>
+                </article>  
+            </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="contentfive">
+            <div class="cont_img"><img src="http://bpic.588ku.com/back_pic/04/64/04/76587385c3e61a7.jpg"></div>
+            <div class="cont_p">
+                <h2>标题1</h2>
+                <p>月下独酌是你，深宫戏耍是你，遍寻知己是你，最恨那负心负知己也是你。</p>
+            </div>
+
+            <div class="cont_p hp">
+                <h2 class="biaoti">标题2</h2>
+                <p class="duanluo">月下独酌是你，深宫戏耍是你，遍寻知己是你，最恨那负心负知己也是你。</p>
+            </div>
+            <div class="cont_img"><img src="http://bpic.588ku.com/back_pic/04/60/88/69586db955eb69f.jpg"></div> 
+
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="contentsix">
+            <h3>为什么纸币最早在中国出现？</h3>
+            <p>本文系作者为《价值起源》（威廉·N.戈兹曼、K.哥特·罗文霍斯特编著，王宇、王文玉译，万卷出版公司二〇一〇年版）所撰写的书评。<br>
+            原载2018年1月号《读书》杂志，授权虎嗅发布。头图来自视觉中国。</p>
+       
+
+            <div class="four_img">
+                <div><img src="http://bpic.588ku.com/back_pic/04/06/82/235810867b8e6d8.jpg">
+                   <!-- <div class="inner">
+                    这是描述。。。
+                </div>  -->
+            </div>
+                <div><img src="http://bpic.588ku.com/back_pic/04/06/82/235810867b8e6d8.jpg"></div>
+                <div><img src="http://bpic.588ku.com/back_pic/04/06/82/235810867b8e6d8.jpg"></div>
+                <div><img src="http://bpic.588ku.com/back_pic/04/06/82/235810867b8e6d8.jpg"></div>
+           </div>
+
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="contentseven">
+
+         <article class="seven_one">
+            <h3>欢迎联系我们</h3>
+            <div class="form">
+                <form>
+
+
+                    <input type="email" name="email" value="" placeholder="请填写邮箱" class=""><br>
+                    <input type="text" name="text" placeholder="标题" class=""><br>
+                    <input type="text" name="text" placeholder="请填写详细内容" class=""><br>
+
+                    <input type="submit" name="" value="发送" class="">
+
+                </form>
+            </div>
+        </article>
+
+        <article class="seven_two">
+            <h3>通讯地址</h3>
+            <p>本文系作者为《价值起源》（威廉·N.戈兹曼、K.哥特·罗文霍斯特编著，王宇、王文玉译，万卷出版公司二〇一〇年版）所撰写的书评。
+            原载2018年1月号《读书》杂志，授权虎嗅发布。头图来自视觉中国。</p>
+
+
+            <div>
+                <ul>
+                    <li><img src="http://bpic.588ku.com/element_origin_min_pic/00/90/12/5456ef1f671c51b.jpg"><span>厦门市思明区软件园二期,望海路9号</span></li>
+                    <li><img src="http://bpic.588ku.com/element_origin_min_pic/00/91/97/5156f18c502b024.jpg"><span>0592-3333333</span></li>
+                    <li><img src="http://bpic.588ku.com/element_origin_min_pic/00/85/39/7656e8db8a85c30.jpg"><span>xxx@baidu.com</span></li>
+
+                </ul>
+
+            </div>
+        </article>
+
+        </div>
+
+    </section>
+    <footer>
+        <div>
+            <ul>
+                <li class="li_one">LEARN MORE</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+            </ul>
+
+            <ul>
+                <li class="li_one">LEARN MORE</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+            </ul>
+
+            <ul>
+                <li class="li_one">LEARN MORE</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+            </ul>
+
+            <ul>
+                <li class="li_one">LEARN MORE</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+                <li>mmmmm</li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
