@@ -1,11 +1,11 @@
-# My first html
+# Some beautiful web
 
-<h4>2018年3月18日琢磨着需要重新转型学习下前端的知识，网上找了视频、书籍自己摸索了一些时间，进而在2018年4月27日开始百度前端技术学院学习前端知识，断断续续坚持着...<h4>
+
 <P>
-我的简历0访问地址  http://htmlpreview.github.io/?https://github.com/shawloong2018/firsthtml/blob/master/jianli_0
+我的简历1访问地址  
 </p>
 <p>
-我的简历2访问地址  http://htmlpreview.github.io/?https://github.com/shawloong2018/firsthtml/blob/master/jianli.html
+我的简历2访问地址  
 </p>
 
 <p>
